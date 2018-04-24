@@ -4,19 +4,19 @@ module TestAutotestStepsRu
 
   include BaseElementsAndMethods
 
-  step 'пользователь открывает "rubygems.org"' do
+  step 'что Елизавета открыла "rubygems.org"' do
     open_rubygems
   end
 
-  step 'вводит в поле поиска "acceptance_testing"' do
+  step 'Елизавета ввела в поле поиска "acceptance_testing"' do
     entering_text
   end
 
-  step 'нажимает клавишу "enter"' do
+  step 'Елизавета нажала клавишу "enter"' do
     press_enter_button
   end
 
-  step 'открывается gem "acceptance_testing"' do
+  step 'Елизавете открывается страница gem "acceptance_testing"' do
     visible_gem_name
   end
 end

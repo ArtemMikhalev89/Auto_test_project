@@ -33,6 +33,16 @@ module InitUtils
      end
    end
 
+   def init_formatters
+     TurnipFormatter.title = 'Example autotest project'
+
+     Gnawrnip.configure do |c|
+       c.make_animation = true
+       c.max_frame_size = 1280 # pixel
+     end
+     Gnawrnip.ready!
+   end
+
   def init_rspec
     RSpec.configure do |config|
       config.color = true

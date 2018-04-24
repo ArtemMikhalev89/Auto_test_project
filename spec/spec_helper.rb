@@ -8,6 +8,7 @@ require 'init_utils'
 require 'pry-byebug'
 require 'chromedriver/helper'
 require "selenium-webdriver"
+require 'gnawrnip'
 
 
 
@@ -29,6 +30,7 @@ Chromedriver.set_version ENV['CHROME_DRIVER_VERSION']
 
 init_capybara
 init_rspec
+init_formatters
 init_site_prism
 
 require_all('spec/support/**/*.rb')
