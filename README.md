@@ -14,4 +14,4 @@
 
 ## Running tests
 
-``$ rake test``
+``$ rake``
